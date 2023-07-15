@@ -1,7 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import PdfGenerator from './pdf_download';
+import logo from "./logo.svg";
+import "./App.css";
+import PdfGenerator from "./pdf_download";
 
 function App() {
   return (
@@ -9,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and nuevo valor.
+          Edit <code>src/App.tsx</code> and try updating this file.
         </p>
         <a
           className="App-link"
@@ -19,7 +18,7 @@ function App() {
         >
           Learn React
         </a>
-        <PdfGenerator/>
+        <PdfGenerator />
       </header>
     </div>
   );
