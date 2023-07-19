@@ -25,6 +25,8 @@
   "scripts": {
     "start": "NODE_ENV=development concurrently \"npm run start:react\" \"wait-on http://localhost:3000 && electron public/electron.js\"",
     "start:react": "BROWSER=none react-scripts start",
+    "start:win:react": "set BROWSER=none&&react-scripts start",
+    "start:win": "set NODE_ENV=development&&concurrently \"npm run start:react\" \"wait-on http://localhost:3000 && electron public/electron.js\"",
     "build": "react-scripts build && electron-builder",
     "test": "react-scripts test",
     "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
