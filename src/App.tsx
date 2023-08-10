@@ -18,6 +18,12 @@ function App() {
         >
           Learn React
         </a>
+        <a className="App-link" href="/error" rel="noopener noreferrer">
+          Error link
+        </a>
+        <a className="App-link" href="/register" rel="noopener noreferrer">
+          Register
+        </a>
         <PdfGenerator />
       </header>
     </div>
