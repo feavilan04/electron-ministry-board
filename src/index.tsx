@@ -3,14 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route
@@ -18,13 +18,15 @@ root.render(
           element={
             <>
               <p>URL Registro</p>
-              <a href="/">Volver</a>
+              <Link to="/">
+                <h2>volver</h2>
+              </Link>
             </>
           }
         />
         <Route path="*" element={<p>URL Error</p>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
 );
 
