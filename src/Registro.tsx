@@ -8,16 +8,52 @@ function App() {
       <div className="box-content p-10 border-2 border-slate-800 place-self-center bg-white shadow-xl rounded-3xl shadow-current">
         <p className="text-center text-6xl leading-snug ">REGISTRO</p>
         <p className="text-center text-base">Ingresa tus datos para acceder</p>
-        <div className="box-content border-2 w-64 m-3 border-purple-900 text-base text-gray-500 text-left">
-          Usuario
-        </div>
-        <div className="box-content border-2 w-64 m-3 border-purple-900 text-base text-gray-500 text-left">
-          Contraseña
-        </div>
-        <div className="box-content border-2 w-64 m-3 border-purple-900 text-base text-gray-500 text-left ">
-          Confirmar contraseña
-        </div>
-        <p className="text-center whitespace-normal text-xs">
+        <label className="block my-2 mx-auto w-96">
+          <span className="text-gray-700">Usuario</span>
+          <input
+            type="text"
+            className="
+              mt-0
+              block
+              w-full
+              px-0.5
+              border-0 border-b-2 border-gray-200
+              focus:ring-0 focus:border-black
+            "
+            placeholder=""
+          />
+        </label>
+        <label className="block my-2 mx-auto w-96">
+          <span className="text-gray-700">Contraseña</span>
+          <input
+            type="text"
+            className="
+              mt-0
+              block
+              w-full
+              px-0.5
+              border-0 border-b-2 border-gray-200
+              focus:ring-0 focus:border-black
+            "
+            placeholder=""
+          />
+        </label>
+        <label className="block my-2 mx-auto w-96">
+          <span className="text-gray-700">Confirmar Contraseña</span>
+          <input
+            type="text"
+            className="
+              mt-0
+              block
+              w-full
+              px-0.5
+              border-0 border-b-2 border-gray-200
+              focus:ring-0 focus:border-black
+            "
+            placeholder=""
+          />
+        </label>
+        <p className="text-center whitespace-normal text-xs w-96">
           Tu clave debe ser de mas de 8 caracteres incluyendo minusculas,
           mayusculas, numeros y caracteres especiales.
         </p>
