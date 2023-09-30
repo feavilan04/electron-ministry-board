@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import App from "./Registro";
+import App from "./Register";
 
 jest.mock("@react-pdf/renderer", () => ({
   Page: () => null,

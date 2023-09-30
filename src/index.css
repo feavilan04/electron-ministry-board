@@ -15,3 +15,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.custom-list-item-fail::before {
+  content: "✘"; /* Puedes cambiar ✘ por el símbolo que desees */
+  margin-right: 0.5rem; /* Espacio entre el indicador y el texto del elemento de lista */
+}
+
+.custom-list-item::before {
+  content: "✔"; /* Puedes cambiar ✔ por el símbolo que desees */
+  margin-right: 0.5rem; /* Espacio entre el indicador y el texto del elemento de lista */
+}
